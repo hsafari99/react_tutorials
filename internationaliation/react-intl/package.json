@@ -1,0 +1,14 @@
+{
+  "name": "react-intl",
+  "version": "1.0.0",
+  "description": "Sample code for react-intl",
+  "main": "App.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-intl": "^6.4.4"
+  }
+}
