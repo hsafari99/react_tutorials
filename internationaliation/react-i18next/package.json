@@ -1,0 +1,15 @@
+{
+  "name": "react-i18next",
+  "version": "1.0.0",
+  "description": "Sample code for react-i18next",
+  "main": "App.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "i18next": "^23.2.3",
+    "react-i18next": "^13.0.1"
+  }
+}
