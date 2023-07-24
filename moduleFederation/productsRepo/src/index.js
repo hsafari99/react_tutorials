@@ -1,9 +1,9 @@
 console.log("Reading ProductRepo...");
 
-const cartText = `<div>You have ${Math.ceil(Math.random() * 100)} products.`;
+const productText = `<div>You have ${Math.ceil(Math.random() * 100)} products.`;
 
 const mount = (el) => {
-    el.innerHTML = cartText;
+    el.innerHTML = productText;
 }
 
 // Situation #1
