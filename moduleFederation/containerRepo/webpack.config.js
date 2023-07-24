@@ -13,9 +13,9 @@ module.exports = {
         }),
         new ModuleFederationPlugin({
             name: 'container', // Only required for remotes. added here for clarity
-            remotes: { // list of micro frontends will be used by container
-                product: 'product@http://localhost:8084/remoteEntry.js', // alias: MFE alias@MFE URL:port/MFE filename MFE alias should match the MFE name in its webpack
-                cart: "carts@http://localhost:8083/remoteEntry.js",
+            remotes: {
+                product: 'product@http://localhost:8084/remoteEntry.js',
+                cart: 'carts@http://localhost:8083/remoteEntry.js',
             },
             shared: {
                 ...deps,
