@@ -9,3 +9,7 @@ moduleFederation_React/auth/node_modules/*
 moduleFederation_React/container/node_modules/*
 moduleFederation_React/dashboard/node_modules/*
 moduleFederation_React/marketing/node_modules/*
+moduleFederation_React/auth/dist/*
+moduleFederation_React/container/dist/*
+moduleFederation_React/dashboard/dist/*
+moduleFederation_React/marketing/dist/*
