@@ -1,3 +1,4 @@
+# IMPORTANT NOTE: to make this action works, the whole .github folder should be put in repo root folder
 name: deploy-container
 on:
     push:
