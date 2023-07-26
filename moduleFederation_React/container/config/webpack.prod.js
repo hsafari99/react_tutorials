@@ -10,6 +10,7 @@ const prodConfig = {
     mode: 'production',
     output: {
         filename: '[name].[contenthash].js',
+        publicPath: '/container/latest/', // Added to match the yaml deployment of container
     },
     plugins: [
         new ModuleFederationPlugin({
