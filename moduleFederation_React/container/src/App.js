@@ -1,12 +1,14 @@
 import React from 'react';
+import { BrowserRouter } from "react-router-dom";
+
 import MarketingApp from './components/MarketingApp';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       Container App!
       <MarketingApp />
-    </div>
+    </BrowserRouter>
   )
 }
 

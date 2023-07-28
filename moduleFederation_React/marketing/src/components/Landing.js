@@ -1,22 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-// import Typography from '@mui/material/Typography';
-
-const Copyright = () => {
+const Landing = () => {
   return (
-    <h1 variant="body2" color="textSecondary" align="center">
-      Hello World!
-    </h1>
+    <div>
+      Hello From Landing Page!
+    </div>
   );
 }
 
-export default function Album() {
-  return (
-    <>
-      <main>
-        <Copyright />
-      </main>
-    </>
-  );
-}
+export default Landing;
