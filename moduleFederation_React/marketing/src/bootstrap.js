@@ -1,10 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-
+import { createBrowserHistory } from 'history';
 import App from './App';
 
 const mount = (el) => {
-    // const history = createMemoryHistory();
+    const history = createBrowserHistory();
     const root = createRoot(el); // createRoot(container!) if you use TypeScript
     root.render(<App history={history} />);
 };
