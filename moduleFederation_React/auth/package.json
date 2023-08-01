@@ -2,7 +2,7 @@
   "name": "auth",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --config config/webpack.dev.js"
   },
   "dependencies": {
     "@babel/core": "^7.22.9",
@@ -16,7 +16,8 @@
     "html-webpack-plugin": "^5.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.2",
+    "react-router": "^6.14.2",
+    "react-router-dom": "^5.2.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",

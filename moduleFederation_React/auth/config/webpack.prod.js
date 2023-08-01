@@ -8,13 +8,13 @@ const prodConfig = {
     mode: 'production',
     output: {
         filename: '[name].[contenthash].js',
-        publicPath: '/marketing/latest/', // Added to match the yaml deployment of container
+        publicPath: '/auth/latest/', // Added to match the yaml deployment of container
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'marketing',
+            name: 'auth',
             exposes: {
-                './MarketingApp': './src/bootstrap',
+                './AuthApp': './src/bootstrap',
             },
             shared: { ...deps },
         }),

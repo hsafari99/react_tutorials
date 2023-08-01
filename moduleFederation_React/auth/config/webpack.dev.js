@@ -6,21 +6,21 @@ const deps = require('../package.json').dependencies;
 const devConfig = {
     mode: 'development',
     devServer: {
-        port: 8082,
+        port: 8083,
         historyApiFallback: {
             index: '/index.html',
         },
         hot: true,
     },
     output: {
-        publicPath: 'http://localhost:8082/', // to make sure that main.js file is loaded from the right source
+        publicPath: 'http://localhost:8083/',
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'marketing',
+            name: 'auth',
             filename: 'remoteEntry.js',
             exposes: {
-                './MarketingApp': './src/bootstrap',
+                './AuthApp': './src/bootstrap',
             },
             shared: { ...deps, },
         }),

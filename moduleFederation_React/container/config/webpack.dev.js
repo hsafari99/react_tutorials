@@ -12,6 +12,9 @@ const devConfig = {
         },
         hot: true,
     },
+    output: {
+        publicPath: 'http://localhost:8081/',
+    },
     plugins: [
         new ModuleFederationPlugin({
             name: 'container',
