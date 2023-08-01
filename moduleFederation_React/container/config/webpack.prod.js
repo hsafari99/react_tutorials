@@ -17,6 +17,8 @@ const prodConfig = {
             name: 'container',
             remotes: {
                 marketing: `marketing@${domain}/marketing/remoteEntry.js`, // marketing folder added to guarantee that remoteEntry.js won't be overwrtten by other MFEs
+                auth: `auth@${domain}/auth/remoteEntry.js`, // auth folder added to guarantee that remoteEntry.js won't be overwrtten by other MFEs
+                dashboard: `dashboard@${domain}/dashboard/remoteEntry.js`, // dashboard folder added to guarantee that remoteEntry.js won't be overwrtten by other MFEs
             },
             shared: { ...deps },
         }),
