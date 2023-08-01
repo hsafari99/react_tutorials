@@ -6,22 +6,21 @@ const deps = require('../package.json').dependencies;
 const devConfig = {
     mode: 'development',
     devServer: {
-        port: 8081,
+        port: 8084,
         historyApiFallback: {
             index: '/index.html',
         },
         hot: true,
     },
     output: {
-        publicPath: 'http://localhost:8081/',
+        publicPath: 'http://localhost:8084/',
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'container',
-            remotes: {
-                marketing: 'marketing@http://localhost:8082/remoteEntry.js',
-                auth: 'auth@http://localhost:8083/remoteEntry.js',
-                dashboard: 'dashboard@http://localhost:8084/remoteEntry.js',
+            name: 'dashboard',
+            filename: 'remoteEntry.js',
+            exposes: {
+                './DashboardApp': './src/bootstrap',
             },
             shared: { ...deps, },
         }),
